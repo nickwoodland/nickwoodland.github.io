@@ -5,3 +5,5 @@ assets/bower_components
 /doc
 /assets/css/*
 !/assets/css/.placeholder
+
+/assets/js/site.js
