@@ -1,4 +1,5 @@
 .editorconfig
+assets/bower_components
 
 /node_modules
 /doc
