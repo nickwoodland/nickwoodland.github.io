@@ -1,0 +1,18 @@
+{
+  "name": "nwportfolio",
+  "homepage": "https://github.com/nickwoodland/portfoliobuild",
+  "authors": [
+    "nickwoodland <nickwoodland@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+  ],
+  "dependencies": {
+      "modernizr": "2.8.3",
+      "slick.js": "~1.6.0",
+      "three.js": "mrdoob/three.js#r73",
+      "velocity": "~1.2.3",
+    }
+}
