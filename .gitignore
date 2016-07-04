@@ -1,0 +1,6 @@
+.editorconfig
+
+/node_modules
+/doc
+/assets/js/libs/*
+/assets/css/*
