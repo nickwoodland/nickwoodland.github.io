@@ -1,0 +1,90 @@
+.about__wrap{
+    width:100%;
+    position:relative;
+}
+
+.aboutbg{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-size: cover;
+    background-position: center;
+    background-image:url('../img/starfieldbg.jpg');
+    opacity:0.0;
+    transition: opacity 3000ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.aboutbg--visible{
+    opacity:0.6;
+}
+
+.about{
+    width:90%;
+    height:80%;
+    max-height:1024px;
+    max-width:980px;
+    z-index:1;
+    position:relative;
+    text-align: center;
+}
+
+.about__img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:76%;
+    width:53%;
+    background-size: cover;
+    background-position: center;
+    background-image:url('../img/about.jpg');
+}
+
+.about__content{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    height:76%;
+    width:53%;
+    overflow:hidden;
+    /*border:2px solid #fff;*/
+    background-color:rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.animateborder::before{
+    content:"";
+    position:absolute;
+    top::0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    max-height:0px;
+    max-width:0px;
+    border-left: 2px solid #fff;
+    border-top:  2px solid #fff;
+    transition: max-height 3000ms ease-in-out, max-width 3000ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.animateborder::after{
+    content:"";
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    height:100%;
+    width:100%;
+    max-height:0px;
+    max-width:0px;
+    border-right: 2px solid grey;
+    border-bottom:  2px solid grey;
+    transition: max-height 3000ms ease-in-out, max-width 3000ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.animateborder--expand::before, .animateborder--expand::after{
+    max-height:1024px;
+    max-width:1024px;
+}

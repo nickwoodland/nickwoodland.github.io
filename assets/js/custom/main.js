@@ -1,0 +1,3 @@
+(function() {
+    initScrolljack(MQ, true);
+})();

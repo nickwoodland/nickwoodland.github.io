@@ -9,7 +9,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/scss/main.scss')
+  return gulp.src('./assets/scss/site.scss')
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
@@ -17,9 +17,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function() {
-  return gulp.src('./assets/js/custom/*.js')
-    .pipe(jslint({}))
-    .pipe(jslint.reporter( 'stylish' ))
+  return gulp.src(['./assets/js/vendor/*.js','./assets/js/custom/plugins.js','./assets/js/custom/scrolljack.js','./assets/js/custom/main.js'])
+    //.pipe(jslint({}))
+    //.pipe(jslint.reporter( 'stylish' ))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(concat('site.js'))
     .pipe(sourcemaps.write())

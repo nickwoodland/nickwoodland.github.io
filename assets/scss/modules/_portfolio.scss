@@ -1,0 +1,111 @@
+.portfolio__wrap{
+    width:100%;
+    background:url('../img/nebulabg.jpg');
+    background-size:cover;
+    position:relative;
+    overflow:hidden;
+    background-attachment: fixed;
+    opacity:0.0;
+    transition: opacity 3000ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slick-slide, .slick-list{
+    height:100vh;
+}
+
+.slide{
+
+    position:relative;
+    overflow:hidden;
+}
+
+.portfolio__item{
+    width:90%;
+    height:80%;
+    max-height:980px;
+    max-width:490px;
+    background-color: #000;
+    position:relative;
+}
+
+.portfolio__item::after{
+    content:"";
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    right: -28px;
+    bottom: -28px;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 1px 4000px #000;
+    opacity:0.6;
+}
+
+.portfolio__item h1, .portfolio__item p{
+    text-align:center;
+}
+
+.portfolio__title{
+    font-size:48px;
+    color: #fff;
+    margin-bottom:32px;
+    padding-bottom:32px;
+    border-bottom:1px solid grey;
+    margin-top:0px;
+    font-weight:400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.portfolio__desc{
+    font-size:14px;
+    color:grey;
+    margin-bottom:64px;
+    margin-left:64px;
+    margin-right:64px;
+    margin-top:0px;
+}
+
+.portfolio-nav--left{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    width: 75px;
+    height: 145px;
+    margin-right: 56px;
+    border-right:2px solid grey;
+}
+
+.portfolio-nav__link--left{
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    z-index: 1;
+    transform: rotate(-45deg);
+    position: absolute;
+    right:0px;
+    /*left: -40%;*/
+    transform-origin: 100% 0%;
+}
+
+.portfolio-nav--right{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    width: 75px;
+    height: 145px;
+    margin-left: 56px;
+    border-left:2px solid grey;
+}
+
+.portfolio-nav__link--right{
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    transform-origin: 0% 0%;
+}

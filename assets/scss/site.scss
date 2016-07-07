@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import "normalize";
+
+//BASE STYLES for html5 bp - helper classes and print styles
+@import "boilerplate";
+
+//variable declarations
+@import "config/vars";
+
+//global styles
+@import "config/global";
+
+
+
+//
+@import "modules/scroll";
+@import "modules/flex";
+@import "modules/space";
+@import "modules/about";
+@import "modules/portfolio";
+@import "modules/contact";

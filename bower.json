@@ -13,6 +13,6 @@
       "modernizr": "2.8.3",
       "slick.js": "~1.6.0",
       "three.js": "mrdoob/three.js#r73",
-      "velocity": "~1.2.3",
+      "velocity": "~1.2.3"
     }
 }
