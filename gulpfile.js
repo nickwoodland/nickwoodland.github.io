@@ -18,7 +18,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function() {
-  return gulp.src(['./assets/js/vendor/*.js','./assets/js/custom/plugins.js','./assets/js/custom/scrolljack.js','./assets/js/custom/space.js','./assets/js/custom/main.js'])
+  return gulp.src(['assets/bower_components/slick.js/slick/slick.min.js','assets/bower_components/three.js/build/three.min.js','assets/bower_components/velocity/velocity.min.js','assets/bower_components/velocity/velocity.ui.min.js','./assets/js/vendor/*.js','./assets/js/custom/plugins.js','./assets/js/custom/scrolljack.js','./assets/js/custom/space.js','./assets/js/custom/main.js'])
     //.pipe(jslint({}))
     //.pipe(jslint.reporter( 'stylish' ))
     .pipe(sourcemaps.init({loadMaps: true}))
