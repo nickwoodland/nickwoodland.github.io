@@ -3,7 +3,3 @@ assets/bower_components
 
 /node_modules
 /doc
-/assets/css/*
-!/assets/css/.placeholder
-
-/assets/js/site.js
