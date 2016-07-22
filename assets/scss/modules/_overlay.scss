@@ -2,18 +2,18 @@
 
     .overlay-border__left, .overlay-border__right{
         position:absolute;
-        top:$base-size;
-        bottom: $base-size;
+        top:$base-size*2;
+        bottom: $base-size*2;
         z-index:9999;
     }
 
     .overlay-border__left{
-        left:$base-size;
+        left:$base-size*2;
         border-right:3px solid $white;
     }
 
     .overlay-border__right{
-        right:$base-size;
+        right:$base-size*2;
         border-left:3px solid $white;
     }
 }
