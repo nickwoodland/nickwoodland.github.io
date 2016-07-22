@@ -213,7 +213,7 @@
         //camera.position.z += (-mouseX/10 - camera.position.x) * 0.025;
         //camera.position.z += (mouseY/10 - camera.position.y) * 0.025;
 
-        camera.position.z -= 0.3;
+        camera.position.z -= 1;
         //camera.position.z += 1;
 
 

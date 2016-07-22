@@ -1,0 +1,19 @@
+.overlay-border{
+
+    .overlay-border__left, .overlay-border__right{
+        position:absolute;
+        top:$base-size;
+        bottom: $base-size;
+        z-index:9999;
+    }
+
+    .overlay-border__left{
+        left:$base-size;
+        border-right:3px solid $white;
+    }
+
+    .overlay-border__right{
+        right:$base-size;
+        border-left:3px solid $white;
+    }
+}

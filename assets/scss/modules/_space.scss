@@ -22,7 +22,7 @@ canvas {
 
 .visible{
     .galaxybg{
-        opacity:0.4;
+        opacity:0.2;
         @include transition(opacity .25s ease);
 
     }

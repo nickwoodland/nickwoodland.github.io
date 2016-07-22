@@ -6,6 +6,18 @@ body {
     font-size:$base-size;
 }
 
+a {
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:visited{
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 
 //typo
 .site-title{
