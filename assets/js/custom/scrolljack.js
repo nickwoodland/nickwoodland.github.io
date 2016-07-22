@@ -3,7 +3,7 @@
 	//variables
 	var hijacking = 'off',
         delta = 500,
-        scrollThreshold = 5,
+        scrollThreshold = 3,
         actual = 1,
         animating = false;
         scrollDelay = false;
@@ -161,6 +161,10 @@
 			$aboutbg.addClass("aboutbg--visible");
 			$animateborder.addClass("animateborder--expand");
 		}
+    	if(section.hasClass('cd-section--contact')){
+    		$aboutbg = $(".contactbg"); //or what element you like
+    		$aboutbg.addClass("contactbg--visible");
+    	}
 	}
 
     function unbindScroll(section, time) {

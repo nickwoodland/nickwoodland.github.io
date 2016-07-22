@@ -1,6 +1,8 @@
 .portfolio__wrap{
     width:100%;
-    background:url('../img/nebulabg.jpg');
+    //background:url('../img/nebulabg.jpg');
+    //background:url('../img/galaxybg3.jpg');
+        background-image:url('../img/starfieldbg.jpg');
     background-size:cover;
     position:relative;
     overflow:hidden;
@@ -8,6 +10,12 @@
     opacity:0.0;
     transition: opacity 3000ms ease-in-out;
     transition-delay: 200ms;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 .slick-slide, .slick-list{
@@ -38,7 +46,7 @@
     bottom: -28px;
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 1px 4000px #000;
-    opacity:0.6;
+    opacity:0.82;
 }
 
 .portfolio__item h1, .portfolio__item p{

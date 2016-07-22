@@ -9,15 +9,16 @@ gulp.task('default', function() {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/scss/site.scss')
+  return gulp.src(['./assets/bower_components/slick.js/slick/slick.scss','./assets/bower_components/slick.js/slick/slick-theme.scss','./assets/scss/site.scss'])
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sass().on('error', sass.logError))
+    .pipe(concat('site.css'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('js', function() {
-  return gulp.src(['./assets/js/vendor/*.js','./assets/js/custom/plugins.js','./assets/js/custom/scrolljack.js','./assets/js/custom/main.js'])
+  return gulp.src(['./assets/js/vendor/*.js','./assets/js/custom/plugins.js','./assets/js/custom/scrolljack.js','./assets/js/custom/space.js','./assets/js/custom/main.js'])
     //.pipe(jslint({}))
     //.pipe(jslint.reporter( 'stylish' ))
     .pipe(sourcemaps.init({loadMaps: true}))

@@ -12,13 +12,23 @@
     background-size: cover;
     background-position: center;
     background-image:url('../img/starfieldbg.jpg');
-    opacity:0.0;
+//background:url('../img/galaxybg3.jpg');
+/*    opacity:0.0;
     transition: opacity 3000ms ease-in-out;
-    transition-delay: 200ms;
+    transition-delay: 200ms;*/
+        transition: transform 10000ms ease-out;
+        transition-delay: 0ms;
+    -ms-transform: translate(0px, 1080px); /* IE 9 */
+    -webkit-transform: translate(0px, 1080px); /* Safari */
+    transform: translate(0px, 1080px);
+    opacity:0.2;
 }
 
 .aboutbg--visible{
-    opacity:0.6;
+    //opacity:0.25;
+    -ms-transform: translate(0px, 440px); /* IE 9 */
+    -webkit-transform: translate(0px, 440px); /* Safari */
+    transform: translate(0px, 440px);
 }
 
 .about{

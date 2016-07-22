@@ -8,6 +8,14 @@
     background-position: bottom;
     background-image:url('../img/earth.jpg');
     background-repeat: no-repeat;
+    transition: transform 10000ms ease-out;
+    transition-delay: 0ms;
+    -ms-transform: translate(0px, 600px); /* IE 9 */
+    -webkit-transform: translate(0px, 600px); /* Safari */
+    transform: translate(0px, 600px);
+    opacity:0.6;
+        -webkit-filter: grayscale(25%);
+    	filter: grayscale(25%);
 }
 
 .contact__wrap{
@@ -23,5 +31,12 @@
     z-index:1;
     position:relative;
     text-align: center;
-    background-color: grey;
+}
+
+
+
+.contactbg--visible{
+    -ms-transform: translate(0px, 400px); /* IE 9 */
+    -webkit-transform: translate(0px, 400px); /* Safari */
+    transform: translate(0px, 400px);
 }
